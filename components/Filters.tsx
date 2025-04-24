@@ -18,7 +18,8 @@ const Filters = ({
   setSelectedOption,
 }: FilterOptionProps) => {
   return (
-    <div className="flex space-x-2 flex-wrap lg:flex-none gap-3 lg:gap-0">
+    <div className="grid mb-6 lg:grid-cols-7 grid-cols-2 gap-3">
+      {/* Map through the options and create buttons for each filter option */}
       {options.map((option, index) => (
         <button
           onClick={() => setSelectedOption(option.label)}

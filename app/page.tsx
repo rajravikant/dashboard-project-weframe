@@ -19,7 +19,7 @@ export default function StoriesPage() {
     <div className="flex h-screen bg-[#fafafa] overflow-y-hidden">
       
       {/* SIDEBAR */}
-      <SideDrawerBar open={isSideBarOpen} />   
+      <SideDrawerBar open={isSideBarOpen} onClose={() => setIsSideBarOpen(false)} />   
       
       <main className="flex-1 lg:p-6 p-2 relative ">
           {/* HEADER */}

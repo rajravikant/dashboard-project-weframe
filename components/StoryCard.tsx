@@ -32,7 +32,6 @@ export default function StoryCard({ image, title, category, date, status }: Stor
           <Image
             src={image || "/placeholder.svg"}
             alt={title}
-            placeholder='blur'
             className="w-full h-96 lg:h-46 object-cover overflow-hidden hover:scale-105 transition-all duration-300 ease-in-out"
           />
           <div className="absolute top-2 right-2 flex space-x-1">
