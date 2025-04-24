@@ -1,25 +1,23 @@
-import type { Metadata } from 'next'
-import './globals.css'
+import type { Metadata } from "next";
+import "./globals.css";
 
-
-import { Urbanist } from 'next/font/google'
+import { Urbanist } from "next/font/google";
 
 export const metadata: Metadata = {
-  title: 'Dashboard',
-  description: 'a dashboard with Next.js and Tailwind CSS',
-}
+  title: "Dashboard",
+  description: "a dashboard with Next.js and Tailwind CSS",
+};
 
-const urbanist = Urbanist({ subsets: ['latin'] })
-
+const urbanist = Urbanist({ subsets: ["latin"] });
 
 export default function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode
+  children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={urbanist.className} >
-      <body >{children}</body>
+    <html lang="en" className={urbanist.className}>
+      <body>{children}</body>
     </html>
-  )
+  );
 }
