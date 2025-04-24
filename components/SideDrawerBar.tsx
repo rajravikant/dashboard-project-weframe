@@ -5,7 +5,7 @@ import { icons } from "@/constant/images"
 import { cn } from "@/lib/utils"
 import SideBarItem from "./SideBarItem"
 
-function SideBar({open}: { open: boolean }) {
+const SideDrawerBar = ({open}: { open: boolean }) => {
   return (
     <div className={cn(" bg-white border-r border-[#e7e8ef] flex-col h-full lg:flex hidden",open ? "w-[200px] opacity-100" : "w-0 opacity-0", "transition-all duration-300 ease-in-out")}>
       <div className="flex-1 py-12">
@@ -30,7 +30,4 @@ function SideBar({open}: { open: boolean }) {
   )
 }
 
-
-export default SideBar;
-
-
+export default SideDrawerBar

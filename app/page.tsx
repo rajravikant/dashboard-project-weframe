@@ -1,10 +1,10 @@
 "use client"
 
+import { useState } from "react"
 import Header from "@/components/Header"
 import StoryCard from "@/components/StoryCard"
-import { useState } from "react"
 import { storyCards } from "@/constant/cardData"
-import SideBar from "@/components/SideBar"
+import SideDrawerBar from "@/components/SideDrawerBar"
 
 export default function StoriesPage() {
   // State to manage the sidebar open/close
@@ -19,8 +19,7 @@ export default function StoriesPage() {
     <div className="flex h-screen bg-[#fafafa] overflow-y-hidden">
       
       {/* SIDEBAR */}
-      <SideBar open={isSideBarOpen}/>
-      
+      <SideDrawerBar open={isSideBarOpen} />   
       
       <main className="flex-1 lg:p-6 p-2 relative ">
           {/* HEADER */}
