@@ -10,6 +10,23 @@ Modern dashboard built using [Next.js](https://nextjs.org/) and [Tailwind CSS](h
 - **Filter Options UI**: Dynamic filters to categorize and sort content.
 - **Story Cards**: Interactive cards displaying story details with animations.
 
+## Snapshots of the app
+# lighthouse score
+![image](https://github.com/user-attachments/assets/f5d85bff-43fa-4bde-b300-be99b6ccd0c7)
+
+# homepage 
+![image](https://github.com/user-attachments/assets/47b05101-551a-4dd7-bf5f-130eb9a7ea5f)
+
+# Mobile View
+![image](https://github.com/user-attachments/assets/15c3811f-3b03-4db3-a5ca-df544762003d)
+
+
+Loom AI demo video
+```
+https://www.loom.com/share/1fb78b6a101840b793db51788a832c76?sid=c2755723-47c8-4052-93c5-dd53f542d021
+```
+
+
 ## Project Structure
 
 The project is organized as follows:
@@ -25,7 +42,6 @@ tsconfig.json
 app/
   globals.css
   layout.tsx
-  loading.tsx
   page.tsx
 assets/
   icons/
