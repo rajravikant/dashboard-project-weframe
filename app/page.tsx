@@ -4,7 +4,8 @@ import Header from "@/components/Header"
 import StoryCard from "@/components/StoryCard"
 import { useState } from "react"
 import { storyCards } from "@/constant/cardData"
-import SideBar from "@/components/sidebar"
+import SideBar from "@/components/SideBar"
+
 export default function StoriesPage() {
   // State to manage the sidebar open/close
   const [isSideBarOpen, setIsSideBarOpen] = useState(true)
